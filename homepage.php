@@ -55,7 +55,7 @@
         else
         {
             
-            echo '<script>window.location= "index.php";</script>';
+            echo '<script>window.location= "information.php";</script>';
         }
     }
     ?>
@@ -68,45 +68,27 @@
     </head>
     <body>
         <link rel="stylesheet" href="style/bootstrap-4.1.0-dist/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/bootstrap-4.1.0-dist/js/bootstrap.bundle.js" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
         <?php include('header.php');?>
         <?php include('side_bar.php');?>
         <div id="container">
                 <div id="login">
-                     
-                    <form  method="post" action="homepage.php">
-                        
- 
-
-                     
-          <div class="dropdown-menu">
-  <span class="dropdown-item-text">Dropdown item text</span>
-  <a class="dropdown-item" href="#">Action</a>
-  <a class="dropdown-item" href="#">Another action</a>
-  <a class="dropdown-item" href="#">Something else here</a>
-</div>
-               
-                        
+                    <form name="information" method="post">
                         <div>
                             <input type="text" name="acc_name" id="acc_name" class="form-control" placeholder="Account Name" aria-label="" aria-describedby="basic-addon1" required="">
                             <br>
                         </div>
-                        
-                       
-                   
+
                         <div class="form-group row">
-                            <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                            <label  for="example-date-input" class="col-2 col-form-label">Date</label>
                                 <div class="col-10">
                                     <input class="form-control" type="date" name=date value="yy-mm-dd" id="example-date-input" required="">
                                 </div>
-                        </div>
-                        
+                            </div>
                         <div>
                             <input type="text" name="description" class="form-control" placeholder="Description" aria-label="" aria-describedby="basic-addon1" required="">
                             <br>
                         </div>
-                        
                         <div>
                             <input type="text" name="category" class="form-control" placeholder="Category" aria-label="" aria-describedby="basic-addon1" required="">
                             <br>
@@ -126,8 +108,10 @@
                             </div>
                         </div>
                         <div>
+                            
                                 <input type="text" name="amount" class="form-control" placeholder="Amount" aria-label="" aria-describedby="basic-addon1" required="">
                                 <br>
+                            
                         </div>
                         <button type="submit" name="submit" class="btn btn-info">Submit</button>
                     </form>
